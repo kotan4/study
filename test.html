@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета кошатника</title>
+</head>
+<body>
+    <main>
+        <h2>Вот небольшая Анкета по <b>котикам</b></h2>
+            <form method="POST" action="https://formspree.io/kotan@aengine.ru">
+                <label>Перед началом введи свой <b>Email</b> для фиксирования ответов:
+                    <br>
+                    <input type="email" name="Мыло" placeholder="Email" required>
+                </label>
+                <br>
+                <label for="client-name">Твое имя: </label>
+                <br>
+                <input type="text" name="Хозяин" id="client-name" placeholder="Твое Имя"
+                       required>
+                <br>
+                <label>Как зовут твоего Кота (можно <i>воображаемого</i>):
+                    <br>
+                    <input type="text" name="Котик" placeholder="Имя котика"
+                           required>
+                </label>
+                <br>
+                <label>Ты его любишь?</label>
+                <br>
+                <label>
+                    <input type="radio" name="Личность" value="Хорошая" checked>Да
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="Личность" value="Плохая">Нет
+                </label>
+                <br>
+                <label>Если вы выбрал "Нет" в прошлом пункте - введи номер паспорта чтоб за тобой выехали:
+                    <br>
+                    <input type="text" name="Паспорт" placeholder="AB123456"
+                           required pattern="[A-Z]{2}[\d]{6}" title="AB123456">
+                </label>
+                <br>
+                <label>Домофон в подьезде твоем есть?</label>
+                <br>
+                <label>
+                    <input type="radio" name="Подьезд" value="Заперто" checked>Есть
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="Подьезд" value="Вход свободен">Нету
+                </label>
+                <br>
+                <input type="submit" value="Выезжайте">
+                <input type="reset" value="Ненад посоны">
+            </form>
+    </main>
+</body>
+</html>
